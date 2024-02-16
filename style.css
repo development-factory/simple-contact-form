@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --font: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: var(--font);
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    max-height: 500px;
+    text-align: center;
+    background-color: #161a42;
+    padding: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(238, 174, 202));
+}
+
+input {
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 5px;
+    font-family: var(--font);
+    margin-bottom: 10px;
+}
+
+button {
+    font-family: var(--font);
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+    color: black;
+    font-size: medium;
+    font-weight: 500;
+}
+
+button:hover {
+    background: rgb(187, 139, 160);
+    background: radial-gradient(
+        circle,
+        rgba(187, 139, 160, 1) 0%,
+        rgb(106, 133, 165) 100%
+    );
+}
+
+#form {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#message {
+    height: 150px;
+    display: block;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: var(--font);
+    padding: 5px;
+}
+
+.container p {
+    font-weight: 400;
+}
+
+#status {
+    color: rgb(2, 182, 2);
+    display: none;
+}
